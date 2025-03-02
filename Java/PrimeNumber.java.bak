@@ -1,0 +1,26 @@
+import java.util.*;
+class PrimeNumber 
+{
+	public static boolean isPrime(int n ) {
+		int i = 2;
+		while(true){
+			if(n < 2 ) return false;
+			if(n % i == 0) return false;		
+			if(i == n / 2 )return true;	
+			i++;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		int num; 
+		Scanner sc = new Scanner(System.in);
+		System.out.println(" Enter a Number ");
+		num = sc.nextInt();
+		if(isPrime(num)){
+			System.out.println(" It is a Prime Number ");	
+		}
+		else{
+			System.out.println(" Not a Prime Number ");	
+		}
+	}
+}
