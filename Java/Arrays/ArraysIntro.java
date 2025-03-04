@@ -1,0 +1,17 @@
+class ArraysIntro 
+{
+	public static void main(String[] args) 
+	{
+		int arr[] = new int[5];
+		int nums [] = {10,43,3,2,42};
+		arr[0] = 40;
+		arr[1] = 50;
+		arr[2] = 60;
+		for(int i : arr){
+		 System.out.println(i);	
+		}
+		for(int j : nums){
+		 System.out.println(j);	
+		}
+	}
+}
