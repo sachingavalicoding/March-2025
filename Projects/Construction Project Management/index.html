@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Construction Project Management</h1>
+
+    <form id="projectForm">
+        <input type="text" id="name" placeholder="Project Name" required>
+        <input type="number" id="budget" placeholder="Budget ($)" required>
+        <input type="date" id="deadline" required>
+        <button type="submit">Add Project</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Budget</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="projectList">
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
