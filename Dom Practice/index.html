@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2> Person Details </h2>
+    <p id="output"></p>
+    <form id="student-form">
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <input type="number" id="age" placeholder="Enter Age" required>
+        <input type="number" id="marks" placeholder="Enter Marks" required>
+        <button type="submit">Add Student</button>
+    </form>
+    <button id="btn"> Print Details </button>
+     <select name="filter" id="filter">
+        <option value="name">Name</option>
+        <option value="age">Age</option>
+        <option value="marks">Marks</option>
+     </select>
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <td> Name </td>
+                <td> Age </td>
+                <td> Marks  </td>
+            </tr>
+        </thead>
+        <tbody id="student-table">
+            
+        </tbody>
+    </table>
+    <script src="./script.js" defer></script>
+</body>
+</html>
